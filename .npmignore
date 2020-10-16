@@ -7,3 +7,4 @@ babel.config.json
 gulpfile.js
 package-lock.json
 .idea
+.github
