@@ -22,6 +22,9 @@
   "bugs": {
     "url": "https://github.com/MuhammedBeraKoc/saber/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/MuhammedBeraKoc/saber#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
