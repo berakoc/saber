@@ -1,0 +1,51 @@
+<svg fill="none" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                :root {
+                    display: inline-block;
+                }
+
+                .container {
+                    font-family:
+                        system-ui,
+                        -apple-system,
+                        'Segoe UI',
+                        Roboto,
+                        Helvetica,
+                        Arial,
+                        sans-serif,
+                        'Apple Color Emoji',
+                        'Segoe UI Emoji';
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0;
+                    width: 120px;
+                    height: 40px;
+                    background: #8900f2;
+                    border-radius: 4px;
+                    color: white;
+                }
+
+                h1 {
+                    padding-left: 4px;
+                    padding-bottom: 8px;
+                    font-size: 30px;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    text-shadow:
+                        0 1px 0 #efefef,
+                        0 2px 0 #efefef,
+                        0 3px 0 #efefef,
+                        0 4px 0 #efefef,
+                        0 12px 5px rgba(0, 0, 0, 0.1);
+                }
+            </style>
+            <div class="container">
+                <h1>Saber</h1><br/>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
