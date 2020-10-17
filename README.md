@@ -1,6 +1,6 @@
 <img src="header.svg">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![npm version](https://badge.fury.io/js/%40berakocc%2Fsaber.svg)](https://badge.fury.io/js/%40berakocc%2Fsaber) [![Coverage Status](https://coveralls.io/repos/github/MuhammedBeraKoc/saber/badge.svg?branch=main)](https://coveralls.io/github/MuhammedBeraKoc/saber?branch=main) ![CI](https://github.com/MuhammedBeraKoc/saber/workflows/CI/badge.svg?branch=main&event=push)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![npm version](https://badge.fury.io/js/%40berakocc%2Fsaber.svg)](https://badge.fury.io/js/%40berakocc%2Fsaber) [![codecov](https://codecov.io/gh/MuhammedBeraKoc/saber/branch/main/graph/badge.svg?token=OI629LUA8D)](https://codecov.io/gh/MuhammedBeraKoc/saber/) ![CI](https://github.com/MuhammedBeraKoc/saber/workflows/CI/badge.svg?branch=main&event=push)
 
 >`A library for creating objects and arrays with immutable methods`
 

@@ -1,7 +1,6 @@
 # My Ignores
 .idea
 .vscode
-coverage
 
 # Logs
 logs
