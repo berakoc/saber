@@ -13,6 +13,10 @@ function tslint() {
     return run('tslint --config tslint.json src/**/*.ts').exec()
 }
 
+function runUnitTests() {
+    return run('npm test').exec()
+}
+
 function runUnitTestsWithCoverage() {
     return run('npm run test:coverage').exec()
 }
@@ -37,3 +41,4 @@ function removeReleaseFolder(cb) {
 }
 
 exports.default = series(clean, tslint, runUnitTestsWithCoverage, compileTypeScript, copyDeclarationFilesToDist, bundle, removeReleaseFolder)
+exports.buildWithoutCoverage = series(clean, tslint, runUnitTests, compileTypeScript, copyDeclarationFilesToDist, bundle, removeReleaseFolder)

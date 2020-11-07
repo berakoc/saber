@@ -8,6 +8,7 @@
         "test": "jest --verbose",
         "test:coverage": "jest --ci --coverage && codecov -t 32bba3e7-5f11-4fd3-9e94-c47f767c2418",
         "build": "gulp",
+        "build:pure": "gulp buildWithoutCoverage",
         "package:info": "npm pack --dry-run"
     },
     "repository": {
