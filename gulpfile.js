@@ -1,18 +1,39 @@
 const { series, src, dest } = require('gulp')
-const babel = require('gulp-babel')
 const del = require('del')
-const rename = require('gulp-rename')
+const webpack = require('webpack-stream')
+const fs = require('fs-extra')
+const run = (command) => require('gulp-run')(command, {})
 
 function clean(cb) {
     del('dist/**/*.js')
     cb()
 }
 
-function transpile() {
-    return src('src/saber.js').
-    pipe(babel()).
-    pipe(rename('index.js')).
-    pipe(dest('dist/'))
+function tslint() {
+    return run('tslint --config tslint.json src/**/*.ts').exec()
 }
 
-exports.default = series(clean, transpile)
+function runUnitTestsWithCoverage() {
+    return run('npm run test:coverage').exec()
+}
+
+function compileTypeScript() {
+    return run('tsc').exec()
+}
+
+function copyDeclarationFilesToDist(cb) {
+    fs.copySync('release', 'dist')
+    del('dist/*.js')
+    cb()
+}
+
+function bundle() {
+    return src('release/saber.js').pipe(webpack(require('./webpack.config.js'))).pipe(dest('./dist'))
+}
+
+function removeReleaseFolder(cb) {
+    del('release')
+    cb()
+}
+
+exports.default = series(clean, tslint, runUnitTestsWithCoverage, compileTypeScript, copyDeclarationFilesToDist, bundle, removeReleaseFolder)

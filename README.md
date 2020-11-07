@@ -1,4 +1,4 @@
-<img src="header.svg">
+<img src="https://i.ibb.co/mbyD3SM/Mask-Group-1.png"><br/><br/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![npm version](https://badge.fury.io/js/%40berakocc%2Fsaber.svg)](https://badge.fury.io/js/%40berakocc%2Fsaber) [![codecov](https://codecov.io/gh/MuhammedBeraKoc/saber/branch/main/graph/badge.svg?token=OI629LUA8D)](https://codecov.io/gh/MuhammedBeraKoc/saber/) ![CI](https://github.com/MuhammedBeraKoc/saber/workflows/CI/badge.svg?branch=main&event=push)
 
@@ -10,19 +10,17 @@ npm install @berakocc/saber
 ```
 
 ## `Usage`
-Saber is register-based library. To enable it you have to run `enhance` function at the beginning of your script. This way you can access all of its immutable methods.
+Saber is a modular library. You can import each component either from its own source file or from saber. I'll use the second way for convenient use.
 ```js
-// Embeds immutable methods to Array and Object prototypes.
-require('@berakocc/saber').enhance()
+const { SaberArray } = require('@berakocc/saber')
 
-const arr = [1, true]
-console.log(arr.prepend('daisy'))
-console.log(arr)
-// Expected outputs:
-// ['daisy', 1, true]
-// [1, true]
+// You can use diamond notation for giving exact types.
+// Even if you don't use it, that's not a problem.
+// But you will get a little warning.
+const saberArray = SaberArray.create<String | Boolean | Number>([1, true])
+saberArray.prepend('value')
+console.log(saberArray)
 ```
-To dismantle library methods from prototypes use `downgrade` method.
 
 ## `Documentation`
 A comprehensive documantion is on [Saber's Github page](https://muhammedberakoc.github.io/saber-web/).

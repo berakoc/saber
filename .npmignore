@@ -8,3 +8,9 @@ gulpfile.js
 package-lock.json
 .idea
 .github
+.prettierrc
+jest.config.js
+webpack.config.js
+tsconfig.json
+tslint.json
+header.svg
