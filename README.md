@@ -23,7 +23,7 @@ console.log(saberArray)
 ```
 
 ## `Documentation`
-A comprehensive documantion is on [Saber's Github page](https://muhammedberakoc.github.io/saber-web/).
+A comprehensive documantion is on [Saber's Webpage](https://saber-9hbsab9dd.vercel.app/).
 
 ## `Contributing`
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Also you can help me to improve the library by adding new [issues](https://github.com/MuhammedBeraKoc/saber/issues).
